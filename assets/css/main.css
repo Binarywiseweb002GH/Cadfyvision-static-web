@@ -3267,3 +3267,56 @@ h3.title-section:after {
 		margin-right: 0;
 	}
 }
+/* Full-width section */
+.steps-section {
+ 
+  padding: 60px 20px;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Section title */
+.steps-section .section-title {
+  font-size: 32px;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+/* Flex wrapper for 5 steps in one line */
+.steps-wrapper {
+  display: flex;
+  justify-content: space-around; /* Evenly spread 5 steps */
+  flex-wrap: nowrap; /* Prevent stacking on small screens */
+  max-width: 1200px; /* Optional: limit width */
+  margin: 0 auto; /* Center wrapper */
+  gap: 20px;
+}
+
+/* Each step card */
+.step {
+  background: #fff;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  flex: 1 1 0; /* Allow equal width for all steps */
+  min-width: 180px; /* Minimum width for small screens */
+}
+
+/* Step number */
+.step-number {
+  font-size: 28px;
+  font-weight: 700;
+  color: #151616;
+  margin-bottom: 15px;
+}
+
+.step h4 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 14px;
+  color: #555;
+}
