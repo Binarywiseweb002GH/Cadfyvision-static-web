@@ -2532,6 +2532,8 @@ button:focus {
 
 /* skillbar */
 
+/* skillbar */
+
 .skills {
     padding-top: 35px;
 }
@@ -2592,6 +2594,8 @@ button:focus {
     -ms-transition-property: width, background-color;
     -o-transition-property: width, background-color;
     transition-property: width, background-color;
+
+    margin-bottom: 60px; /* <-- Add this line to create space between bars */
 }
 
 
