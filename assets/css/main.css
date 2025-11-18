@@ -3320,6 +3320,30 @@ h3.title-section:after {
   font-size: 14px;
   color: #555;
 }
+footer {
+    padding-top: -50 !important;
+}
+
+section, div {
+    margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
+}
+
+.action-text-section {
+    padding-bottom: 100px !important; /* increase space below */
+    margin-bottom: 100px !important;  /* add extra space below section */
+}
+/* Portfolio Section Spacing */
+.portfolioFilter {
+    margin-bottom: 40px !important; /* space between menu and grid */
+}
+
+/* Spacing between portfolio items */
+#grid-mosaic .cbp-item {
+    margin-bottom: 30px;
+}
+
+/* Image container with overlay */
 .image-box {
     position: relative;
     overflow: hidden;
@@ -3369,7 +3393,6 @@ h3.title-section:after {
 .portfolioFilter .cbp-filter-item-active {
     color: #ff6600; /* example highlight color */
 }
-
 
 
 
