@@ -3320,3 +3320,56 @@ h3.title-section:after {
   font-size: 14px;
   color: #555;
 }
+.image-box {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Images normal (light gray darkened with overlay) */
+.image-box img {
+    display: block;
+    width: 100%;
+    filter: grayscale(100%);
+    transition: all 0.3s ease;
+}
+
+/* Overlay for subtle dark effect */
+.image-box .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3); /* dark gray overlay */
+    transition: all 0.3s ease;
+}
+
+/* Hover effect: lighten overlay */
+.image-box:hover .overlay {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+/* Caption text white for visibility */
+.caption-box .caption-body h2 {
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Optional: spacing between filter items */
+.portfolioFilter .cbp-filter-item {
+    margin: 0 15px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Highlight active filter */
+.portfolioFilter .cbp-filter-item-active {
+    color: #ff6600; /* example highlight color */
+}
+
+
+
+
