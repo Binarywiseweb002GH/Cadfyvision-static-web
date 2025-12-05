@@ -181,28 +181,15 @@
             <div class="col-md-6" style="margin-top: 40px;">
                 
                 <div class="contact-form">
-                     <form action="#" method="POST" class="input-label ajax-contact">
-            <ul class="list-unstyled p-0 float-left w-100 mb-0">
-              <li>
-                <input type="text" class="form-control" placeholder="Name" name="name" id="name" required="">
-              </li>
-              <li>
-                  <input type="email" class="form-control" placeholder="Email" name="email" id="email" required="">
-              </li>
-              <li>
-               <input type="tel" class="form-control" placeholder="Number" name="number" id="number" required="">
-              </li>
-              
-
-              <li>
-                  <textarea name="message" id="message" cols="30" placeholder="Write Message" rows="3" class="form-control" required=""></textarea>
-              </li>
-            </ul>
-           <div class="text-center">
-    <button type="submit" id="submit" class="secondary_btn">Send Now</button>
-</div>
-
-          </form>
+                    <form action="#" method="POST" class="input-label ajax-contact">
+                      <p><input type="text" name="name" id="name" required="required" placeholder="Name"></p>
+                      <p><input type="email" name="email" id="email" required="required" placeholder="Email"></p>
+                      <p><input type="text" name="phone" id="phone" placeholder="Phone"></p>
+                      <p><textarea name="message" id="message" placeholder="Message"></textarea></p>
+                      <div class="message success"><i class="fa-regular fa-circle-check"></i> Your email was sent. Thanks!</div>
+                      <div class="message danger"><i class="fa-regular fa-triangle-exclamation"></i> Sorry something went wrong!</div>
+                       <button type="submit" id="submit" class="secondary_btn">Send Now</button>
+                    </form>
                 </div>
 
            </div>
