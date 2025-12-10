@@ -3401,6 +3401,22 @@ section, div {
     margin-top: 50px !important;
     margin-bottom: 50px !important;
 }
+.vision-mission-section .services-box {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.vision-mission-section .row {
+    align-items: stretch;
+}
+.vision-mission-section {
+    padding-bottom: 100px !important; /* increase or reduce */
+}
+.vision-mission-section {
+    background-color: #ffffff !important;
+}
+
 
 
 
