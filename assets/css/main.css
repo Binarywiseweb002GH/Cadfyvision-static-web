@@ -3418,6 +3418,13 @@ section, div {
 }
 
 
+/* Mobile view only */
+@media only screen and (max-width: 767px) {
+    /* Add spacing between Vision and Mission boxes */
+    .vision-mission-section .col-md-5 {
+        margin-bottom: 30px !important; /* increases space on mobile */
+    }
+}
 
-
+/* Mobile specific adjustments */
 
