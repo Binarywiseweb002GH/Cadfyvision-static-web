@@ -3445,3 +3445,45 @@ section, div {
         margin-bottom: 35px !important; 
     }
 }
+
+
+@media (max-width: 768px) {
+
+  /* Keep gutters removed */
+  #wrapper .container .row.gy-5 {
+      --bs-gutter-y: 0 !important;
+      row-gap: 0 !important;
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+  }
+
+  /* Keep column padding removed */
+  #wrapper .container .row.gy-5 > .col-md-3,
+  #wrapper .container .row.gy-5 > [class*="col-"] {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+  }
+
+  /* Add small space between experience boxes */
+  #wrapper .experience-box {
+      margin-bottom: 10px !important;   /* ⭐ small gap added here */
+      padding-top: 10px !important;
+      padding-bottom: 10px !important;
+  }
+
+  /* Keep titles and text tight */
+  #wrapper .experience-box h4,
+  #wrapper .experience-box p {
+      margin-top: 0 !important;
+      margin-bottom: 0 !important;
+  }
+
+  /* No space on icons */
+  #wrapper .experience-box .icon,
+  #wrapper .experience-box .icon i {
+      margin: 0 !important;
+      padding: 0 !important;
+  }
+}
