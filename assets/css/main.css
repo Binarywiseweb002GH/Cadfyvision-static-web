@@ -3426,4 +3426,22 @@ section, div {
     }
 }
 
-/* Only change the slider title on mobile */
+@media only screen and (max-width: 768px) {
+    .row.gy-5 {
+        row-gap: 10px; /* reduce the row gap */
+    }
+    .experience-box {
+        margin-bottom: 0; /* remove extra margin */
+    }
+}
+/* Add space under the TITLE */
+.rev_slider .tp-caption.title-caption {
+    margin-bottom: 25px !important; /* increase or decrease */
+}
+
+/* Mobile adjustment if needed */
+@media only screen and (max-width: 768px) {
+    .rev_slider .tp-caption.title-caption {
+        margin-bottom: 35px !important; 
+    }
+}
