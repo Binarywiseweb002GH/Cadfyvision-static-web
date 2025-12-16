@@ -3503,4 +3503,8 @@ section, div {
     }
 
 }
-
+.tp-caption.tp-resizeme.rev-btn span {
+    display: inline-block;      /* make span respect vertical adjustments */
+    position: relative;         /* allows moving text relative to normal position */
+    top: -4px;                  /* move text 4px upward, adjust as needed */
+}
