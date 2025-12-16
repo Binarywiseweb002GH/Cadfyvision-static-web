@@ -3493,4 +3493,14 @@ section, div {
     background-color: #ffffff;
     padding: 60px 0;
 }
+ /* MOBILE FIX – prevent service cards overlapping */
+@media (max-width: 768px) {
+
+    .services-section .services-box {
+        position: relative;
+        padding-bottom: 25px !important;
+        margin-bottom: 25px !important;
+    }
+
+}
 
