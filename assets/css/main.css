@@ -3466,7 +3466,8 @@ section, div {
       margin-bottom: 0 !important;
   }
 
-  /* Add small space between experience boxes */
+  /
+  * Add small space between experience boxes */
   #wrapper .experience-box {
       margin-bottom: 10px !important;   /* ⭐ small gap added here */
       padding-top: 10px !important;
@@ -3487,3 +3488,9 @@ section, div {
       padding: 0 !important;
   }
 }
+
+.chat-section {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
