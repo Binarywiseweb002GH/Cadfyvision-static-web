@@ -3508,3 +3508,46 @@ section, div {
     position: relative;         /* allows moving text relative to normal position */
     top: -4px;                  /* move text 4px upward, adjust as needed */
 }
+
+
+/* Pricing row: flex container for 2 boxes per row */
+.pricing-section .row {
+    display: flex;
+    flex-wrap: wrap; /* wrap to next line after 2 boxes */
+    gap: 30px;       /* spacing between boxes */
+}
+
+/* Each column takes 50% of the row */
+.pricing-section .col-md-6 {
+    flex: 0 0 48%; /* 48% allows some gap, adjust if needed */
+    display: flex; /* make column a flex container so box stretches */
+}
+
+/* Make pricing box stretch to full height */
+.pricing-box {
+    display: flex;
+    flex-direction: column; /* stack header and body */
+    flex: 1;                /* fill the height of the column */
+}
+
+/* Keep the Buy button / price at the bottom */
+.pricing-box .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1; /* allow body to expand to fill space */
+}
+
+/* Make the list take all remaining space above hr */
+.pricing-box .card-body ul {
+    margin-bottom: 20px; /* spacing from hr */
+    flex-grow: 1;         /* push hr and price to bottom */
+}
+
+/* Style the horizontal line */
+.pricing-box .card-body hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 0 0 15px 0; /* space below the line before price */
+}
